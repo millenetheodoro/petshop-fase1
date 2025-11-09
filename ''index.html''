@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Petshop Meu Amigo Fiel - Home</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Petshop Meu Amigo Fiel 🐾</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="produtos.html">Produtos</a> |
+            <a href="servicos.html">Serviços</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Bem-vindo(a) ao Seu Melhor Amigo!</h2>
+        <p>No Petshop Meu Amigo Fiel, entendemos que seu pet é parte da família. Oferecemos uma seleção de produtos e serviços para garantir a saúde, felicidade e bem-estar do seu companheiro.</p>
+        
+        <h3>Nossa Missão</h3>
+        <p>Ser a loja de referência em cuidados pet, oferecendo qualidade e carinho em cada atendimento.</p>
+        
+        <p>Confira nossos <a href="produtos.html">produtos exclusivos</a> e <a href="servicos.html">serviços especializados</a>!</p>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 Petshop Meu Amigo Fiel | Desenvolvido por Millene.</p>
+        <p>Telefone: (99) 9999-9999 | E-mail: contato@meuamigofiel.com</p>
+    </footer>
+
+</body>
+</html>

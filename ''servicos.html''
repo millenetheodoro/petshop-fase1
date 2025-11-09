@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Petshop Meu Amigo Fiel - Serviços</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Petshop Meu Amigo Fiel 🐾</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="produtos.html">Produtos</a> |
+            <a href="servicos.html">Serviços</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Serviços Disponíveis</h2>
+        <p>Cuidamos do seu pet com toda a atenção que ele merece. Confira nossa tabela de serviços:</p>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Descrição</th>
+                    <th>Valor (R$)</th>
+                    <th>Tele-Busca Disponível</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Banho e Tosa Completa</td>
+                    <td>Serviço completo de higiene, corte de unhas e limpeza de ouvidos.</td>
+                    <td>65,00</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>Consulta Veterinária</td>
+                    <td>Check-up geral com veterinário. Não inclui exames.</td>
+                    <td>120,00</td>
+                    <td>Não</td>
+                </tr>
+                <tr>
+                    <td>Hospedagem Diária</td>
+                    <td>Cuidado e alimentação em um ambiente seguro por 24 horas.</td>
+                    <td>80,00</td>
+                    <td>Sim</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 Petshop Meu Amigo Fiel | Desenvolvido por Millene.</p>
+        <p>Telefone: (99) 9999-9999 | E-mail: contato@meuamigofiel.com</p>
+    </footer>
+
+</body>
+</html>
