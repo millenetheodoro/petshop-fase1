@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Petshop Meu Amigo Fiel</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container my-5">
+    <h1 class="mb-4">Agendamento de Serviços</h1>
+
+    <form id="formAgendamento" class="row g-3">
+        <h2 class="mt-4">1. Seus Dados</h2>
+
+        <div class="col-md-6">
+            <label for="nomeCliente" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="nomeCliente" required placeholder="Seu nome completo">
+        </div>
+        
+        <div class="col-md-3">
+            <label for="cpfCliente" class="form-label">CPF</label>
+            <input type="text" class="form-control" id="cpfCliente" required placeholder="Ex: 000.000.000-00">
+        </div>
+
+        <div class="col-md-3">
+            <label class="form-label">Sexo</label>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="Feminino" required>
+                    <label class="form-check-label" for="sexoF">Feminino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="Masculino">
+                    <label class="form-check-label" for="sexoM">Masculino</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <label for="emailCliente" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="emailCliente" required placeholder="seu.email@exemplo.com">
+        </div>
+
+        <div class="col-md-6">
+            <label for="telefoneCliente" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefoneCliente" placeholder="(99) 99999-9999" required>
+        </div>
+
+        <div class="col-12">
+            <label for="enderecoCliente" class="form-label">Endereço Completo</label>
+            <input type="text" class="form-control" id="enderecoCliente" placeholder="Rua, Número, Bairro" required>
+        </div>
+
+        <h2 class="mt-5">2. Dados do Pet</h2>
+
+        <div class="col-md-6">
+            <label for="nomePet" class="form-label">Nome do Pet</label>
+            <input type="text" class="form-control" id="nomePet" required>
+        </div>
+        
+        <div class="col-md-3">
+            <label for="racaPet" class="form-label">Raça</label>
+            <input type="text" class="form-control" id="racaPet" required>
+        </div>
+        
+        <div class="col-md-3">
+            <label for="idadePet" class="form-label">Idade (em anos)</label>
+            <input type="number" class="form-control" id="idadePet" min="0" required placeholder="0">
+        </div>
+
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="vacinasEmDia">
+                <label class="form-check-label" for="vacinasEmDia">
+                    Declaro que as vacinas do meu pet estão em dia.
+                </label>
+            </div>
+        </div>
+
+
+        <h2 class="mt-5">3. Serviço e Agendamento</h2>
+
+        <div class="col-md-4">
+            <label for="servico" class="form-label">Serviço Desejado</label>
+            <select id="servico" class="form-select" required>
+                <option selected disabled value="">Selecione...</option>
+                <option value="Banho">Banho</option>
+                <option value="Tosa">Tosa</option>
+            </select>
+        </div>
+
+        <div class="col-md-8">
+            <label class="form-label">Método de Agendamento</label>
+            <div class="d-flex">
+                <div class="form-check me-4">
+                    <input class="form-check-input" type="radio" name="metodo" id="teleBusca" value="Tele-busca" required>
+                    <label class="form-check-label" for="teleBusca">
+                        Tele-busca (Coleta e Entrega em Casa)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="metodo" id="entregaLocal" value="Entrega no Local">
+                    <label class="form-check-label" for="entregaLocal">
+                        Entrega do Pet no Local
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <label for="dataAgendamento" class="form-label">Data</label>
+            <input type="date" class="form-control" id="dataAgendamento" required>
+        </div>
+
+        <div class="col-md-4">
+            <label for="horaAgendamento" class="form-label">Horário</label>
+            <input type="time" class="form-control" id="horaAgendamento" required>
+        </div>
+
+        <div class="col-12 mt-4">
+            <button type="submit" class="btn btn-success btn-lg">Confirmar Agendamento</button>
+        </div>
+    </form>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    </body>
